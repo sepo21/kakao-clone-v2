@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/ac27b2f4bb.js"
       crossorigin="anonymous"
@@ -40,11 +41,12 @@
     </header>
     <main class="chats">
       <ul class="chats__list">
-        <li class="chats__chat chat">
+        <a href="chat.html">
+        <li class="chats__chat chat friend friend--lg">
           <div class="chat__column">
             <img class="chat__avatar g_avatar" src="images/nico.png" />
             <div class="chat__conntent">
-              <span class="chat__username"> 
+              <span class="chat__username">
                 Lynn
               </span>
               <span class="chat__preview">
@@ -52,8 +54,12 @@
               </span>
             </div>
           </div>
-          <div class="chat__column"></div>
-          <span class="chat__timestamp">Yesterday</span>
+          <div class="chat__column">
+          <span class="chat__timestamp">
+            Yesterday
+          </span>
+          </div>
+        </a>
         </li>
       </ul>
     </main>
