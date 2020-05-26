@@ -11,7 +11,41 @@
     display: flex;
     justify-content: space-between;
 }
+.nav .nav__list-link {
+    position: relative;
+}
+.nav .nav__badge {
+    
+    width: 17px;
+    height: 17px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    background-color: red;
+    position: absolute;
+    top:-11px;
+    right:-7px;
+    border-radius: 10px;
+    
+}
 
 .nav i {
     font-size: 20px;
+}
+
+@keyframes showNavBar {
+    from{
+        transform: translateY(80px);
+    }
+    to{
+        transform: none;
+    }
+}
+
+.nav {
+    transform: translateY(80px);
+    animation: showNavBar 0.5s ease-out forwards;
+    animation-delay: 0.3s;
 }

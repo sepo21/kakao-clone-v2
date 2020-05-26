@@ -1,18 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300:wght@400;600&display=swap");
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
-
-*{
-    box-sizing:border-box;
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: white;
-    padding:10px 20px;
-    columns: #020202;
-    height: 1000px;
+body {
+  background-color: white;
+  padding: 10px 20px;
+  columns: #020202;
+  height: 1000px;
 }
 
 a {
-    color: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main:not(.chat-screen) {
+  animation: fadeIn 0.5s ease-in-out;
 }
