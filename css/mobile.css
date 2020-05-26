@@ -1,0 +1,21 @@
+.bigScreen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fce006;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    display: none;
+}
+
+@media screen and (min-width:550px){
+    .bigScreen {
+        display: flex;
+    }
+}
