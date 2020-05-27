@@ -1,0 +1,17 @@
+@keyframes refloat-high {
+  from {
+    box-shadow: 1px 1px 2px #d1ba05, -1px -1px 2px #ffff07;
+  }
+  to {
+    box-shadow: 22px 22px 44px #d1ba05, -22px -22px 44px #ffff07;
+  }
+}
+
+@keyframes refloat-low {
+  from {
+    box-shadow: 1px 1px 2px #d6be05, -1px -1px 2px #ffff07;
+  }
+  to {
+    box-shadow: 5px 5px 10px #d6be05, -5px -5px 10px #ffff07;
+  }
+}

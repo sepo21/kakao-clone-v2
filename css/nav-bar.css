@@ -1,51 +1,52 @@
 .nav {
-    position: fixed;
-    width: 100%;
-    background-color: #fcfcfc;   
-    padding: 20px 50px;
-    left: 0px;
-    bottom: 0px;
-    border-top: 1px solid #f7f7f7;
+  position: fixed;
+  width: 100%;
+  background-color: orange;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 7px solid rgb(255, 196, 0);
+  color: rgb(68, 34, 9);
 }
 .nav .nav__list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav .nav__list-link {
-    position: relative;
+  position: relative;
 }
+
+.nav__list-link i {
+  padding: 15px;
+  border-radius: 20px;
+}
+
 .nav .nav__badge {
-    
-    width: 17px;
-    height: 17px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 11px;
-    background-color: red;
-    position: absolute;
-    top:-11px;
-    right:-7px;
-    border-radius: 10px;
-    
+  width: 17px;
+  height: 17px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  background-color: red;
+  position: absolute;
+  top: -11px;
+  right: -7px;
+  border-radius: 10px;
 }
 
 .nav i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-@keyframes showNavBar {
-    from{
-        transform: translateY(80px);
-    }
-    to{
-        transform: none;
-    }
+.nav__list-item {
+  padding: 0px;
+  border-radius: 40px;
+  background: orange;
+  box-shadow: 6px 6px 12px #ad7000, -6px -6px 12px #ffda00;
 }
 
-.nav {
-    transform: translateY(80px);
-    animation: showNavBar 0.5s ease-out forwards;
-    animation-delay: 0.3s;
+.nav__list-item.pressed {
+  box-shadow: inset 6px 6px 12px #ad7000, inset -6px -6px 12px #ffda00;
 }

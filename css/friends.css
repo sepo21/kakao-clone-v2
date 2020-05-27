@@ -1,12 +1,27 @@
-.friends .friends__plus {
-  padding: 20px 0px;
-  border-top: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
-  margin: 20px 0px;
+
+
+.friends {
+  color: rgb(68, 34, 9);
 }
+
+.friends .friends__plus {
+  margin: 60px 0px;
+}
+
+.friends__header,
+.friends__plus,
+.friends__list,
+.chats__list {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e3ca05, #fff006);
+  box-shadow: 22px 22px 44px #d1ba05, -22px -22px 44px #ffff07;
+  animation: refloat-high 1s linear;
+}
+
 .friends__plus .friends__title,
 .friends__list .friends__title {
   font-size: 14px;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-bottom: 12px;
 }

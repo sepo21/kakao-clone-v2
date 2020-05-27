@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-bottom: 30px;
   align-items: center;
+  color: rgb(68, 34, 9);
 }
 
 .header .header__title {
